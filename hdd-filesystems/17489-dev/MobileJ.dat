@@ -1,0 +1,10 @@
+[xbdm]
+dbgname name=DEVKIT
+staticip use=0, addr=0xc0a88905
+subnet addr=0xffffff00
+gateway addr=0xc0a88901
+memtrack flags=0x0 stackdepth=0x0
+dumpsettings rpt=prompt dst=local fmt=full
+dumpmode smart
+eventdefer set  break debugstring singlestep databreak
+httpreg clear
