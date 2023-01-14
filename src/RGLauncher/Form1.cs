@@ -233,7 +233,8 @@ namespace RGBuilder_Launcher_Csharp
             // 
             this.kernelCheckedBox.FormattingEnabled = true;
             this.kernelCheckedBox.Items.AddRange(new object[] {
-            "17150",
+            "16547",
+			"17150",
             "17489"});
             this.kernelCheckedBox.Location = new System.Drawing.Point(0, 3);
             this.kernelCheckedBox.Name = "kernelCheckedBox";
