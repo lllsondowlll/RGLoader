@@ -9,45 +9,9 @@
                              --------------------------------------------------------
                                                  RGLoader 0v530                                             
 	-----------------------------------------------------------------------------------------------
-	\_Release Notes:_\\
-
-	     A lot of people have thought that RGLoader has been dead/abandoned.  Yeah, basically it's 
-	  been dead for a while now mostly because Stoker has been gone for over a year so there was
-	  only one real developer for RGLoader and real life stuff gets in the way.  I've gotta put out 
-	  a big thank you to sk1080 for releasing a usable version of RGLoader for 16202 while I've 
-	  been gone.  In either case, saying that RGLoader is dead really does not make a lot of sense
-	  when we have tried to make it as open as possible without sharing code that was donated by
-	  people who don't want it running out in the wild yet.  RGBuild.exe is not obfuscated in any
-	  way and can be completely decompiled to source with .net reflector.  The patches are provided 
-	  in plain text and compiled when you run the image which should allow anyone to be able to 
-	  update them for a new kernel.  All you would have to do is use the existing file structures 
-	  as a guide to add support for a new update.  This said, there is no reason that some random 
-	  person would not be able to change RGBuild for their own purpose or for a new kernel.  
-	  
-	    RGBuild++ was another project started by stoker and abandoned and left to me to finish, and
-	  there's still quite a bit of work to be done on it before it's ready for a release.  I felt 
-	  bad releasing an update using the RGBuild everyone is familiar with when I have promised 
-	  new features like jasper big block support.  It's hard to devote the amount of time and effort
-	  needed to finish something like this when the xbox scene is slowing down and interest in 
-	  alternative nand builders is low.  This doesn't mean that I haven't been updating RGLoader for
-	  my own uses and adding features, it just means I didn't feel like putting in the effort to 
-	  make it usable for the general public and releasing.  
-	  
-	    I've seen a lot more activity in the #RGloader channel on EFNet and on the forum with 
-	  people asking for a new update.  I have no problem putting the work in when I know it's not 
-	  going to waste, so these past couple weeks I have been porting some of the new features in 
-	  RGBuild++ to this older builder just so you guys can enjoy what we have so far and run a much
-	  more stable kernel.
-	  
-	    I'd like to conclude with, don't be fooled and think that just because the builder looks 
-	  the same that the xbox side hasn't changed.  Please try out some of the new features added 
-	  and PLEASE leave feedback in the shoutbox at rgloader.com with any problems or successes you
-	  have had.  This lets us know that there are still people out there that have use for a devkit
-	  kernel on a retail xbox.
-	  
-	  PLEASE READ THE REST OF THE README! THINGS HAVE CHANGED!
-	  
-	_______________________________________________________________________________________________     
+	0v530 release notes not included
+	_______________________________________________________________________________________________ 
+	-----------------------------------------------------------------------------------------------    
 	***READ BEFORE PROCEEDING!***
 	[DEVKITS]
 	***WARNING!!! DO NOT CONTINUE WITHOUT A METHOD TO ACCESS THE XBOX 360 HDD EXTERNALLY I.E. AN EXTERNAL USB TO SATA CABLE*** 
@@ -87,7 +51,7 @@
 	  -Click the NAND button to browse for your source nand image.
 	   ***JTAGS MUST SELECT A FREEBOOT IMAGE***
    
-	  -Configure the options in the launcher for your build type ex: RGH1/RGH2/JTAG and build version (16537 is latest).
+	  -Configure the options in the launcher for your build type ex: RGH1/RGH2/JTAG and build version (17489 is latest).
 
 	  -Click "RGBuilder" button to start the process.
 
