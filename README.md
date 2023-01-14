@@ -7,7 +7,7 @@
                                        \\\\ \_/\_\\_______\\_________\\\
                                    ....\\\\\/_/\_//_______//_________////....
                              --------------------------------------------------------
-                                                 RGLoader 0v400                                             
+                                                 RGLoader 0v530                                             
 	-----------------------------------------------------------------------------------------------
 	\_Release Notes:_\\
 
@@ -48,19 +48,31 @@
 	  PLEASE READ THE REST OF THE README! THINGS HAVE CHANGED!
 	  
 	_______________________________________________________________________________________________     
+	***READ BEFORE PROCEEDING!***
+	[DEVKITS]
+	***WARNING!!! DO NOT CONTINUE WITHOUT A METHOD TO ACCESS THE XBOX 360 HDD EXTERNALLY I.E. AN EXTERNAL USB TO SATA CABLE*** 
+	***DEVKITS SHOULD BE RUNNING XDK:21256.18 FIRMWARE BEFORE PROCEEDING***
+	***DEVKITS SHOULD ONLY COPY THE CONTENTS INSIDE OF HDD-FILESYSTEMS TO THE CONSOLE HDD***
+	***DELETE XBOXROMW2D.BIN FROM THE CONSOLE HDD, OR REMOVE THE HDD, SHOULD THE CONSOLE FAIL TO BOOT***
+	***PROCEED WITH INSTRUCTIONS BELOW --SKIP THE STEPS UNDER THE USAGE SECTION!***
+	[JTAGS]
+	***WARNING!!! DO NOT FLASH JTAG XBOX 360S WITHOUT A NAND BACKUP AND AN EXTERNAL NAND READER/WRITER***
+	***JTAGS MAY NOT BE COMPATIBILE NOR BOOT WITH THIS VERSION OF RGBUILDER 0V530 PATCHES AND 17489/17559 NAND IMAGES***
+	***CONSOLE MAY FAIL TO BOOT IF PREREQUISITES ARE NOT SATISFIED***
+	***RESTORE NAND SHOULD THE CONSOLE FAIL TO BOOT***
+	***PROCEED WITH INSTRUCTIONS BELOW*** 
+	[RGH]
+	***WARNING!!! DO NOT FLASH RGH XBOX 360 WITHOUT A NAND BACKUP AND AN EXTERNAL NAND READER/WRITER***
+	***CONSOLE MAY FAIL TO BOOT IF PREREQUISITES ARE NOT SATISFIED***
+	***RESTORE NAND BACKUP SHOULD THE CONSOLE FAIL TO BOOT***
+	***PROCEED WITH INSTRUCTIONS BELOW***
 	-----------------------------------------------------------------------------------------------
 	\_Prerequisites:_\\
 	  
 	  -You will need .NET Framework 4.0 or 4.5 installed. 
            May also work with Mono.
 
-	  -Copy rgloader.ini to the root of the hard drive.  
-
-	  -(OPTIONAL) Copy bootanim.wmv to the root of the hard drive for 
-           alternate boot animation.  
-	   *** (slows boot times a little bit) ***
-		
-	  -Extract the hdd filesystems rar to 'Hdd:\Filesystems\' on your xbox hard drive.
+	  -Copy the contents inside of 'hdd-filesystems' to the root of your xbox hard drive - Hdd:\.
 	   *** WARNING: Folder name is case-sensitive!! ***
 		
 	  -(**IMPORTANT**) If you have an xbdm.ini on the root of your hard drive, 
@@ -70,13 +82,11 @@
 	-----------------------------------------------------------------------------------------------
 	\_Usage:_\\
 	
-	  -Extract the builder rar to a folder.
-
-	  -Run the launcher and put in your CPUKey.  
+	  -Run the RGBuilder launcher and insert your CPUKey.  
 		
 	  -Click the NAND button to browse for your source nand image.
 	   ***JTAGS MUST SELECT A FREEBOOT IMAGE***
-	  
+   
 	  -Configure the options in the launcher for your build type ex: RGH1/RGH2/JTAG and build version (16537 is latest).
 
 	  -Click "RGBuilder" button to start the process.
@@ -114,7 +124,7 @@
 		 
 		 Format:
 			[Plugins]
-			Plugin1 = Hdd:\Plugin1blah.xex
+			Plugin1 = Hdd:\stealth.xex
 			Plugin2 = 
 			Plugin3 = 
 			
@@ -171,7 +181,8 @@
 	\_RGLoader Main Features:_\\
 	
 	  -- Minimal Mode --
-		
+	  *** WARNING! MINIMAL MODE MAY NOT BE COMPATIBILE NOR BOOT WITH THIS VERSION OF RGBUILDER 0V530 PATCHES AND 17489/17559 NAND IMAGES***
+	
              If you are missing the filesystem files on your hard drive, it will boot 
              to a nand-only mode with minimal features.  This mainly means that only the 
              devkit launcher will work and not the regular dashboard.  
