@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{DBB35082-7AFF-42F6-AB81-017F4A5F9D3D}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>WinExe</OutputType>
+    <AssemblyName>RGLauncher</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Images\Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="INIFileParser">
+      <HintPath>.\INIFileParser.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.cs" />
+    <Compile Include="Form1Res1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Form1Res1.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Form1Res2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Form1Res2.resx</DependentUpon>
+    </Compile>
+    <Compile Include="AboutRes.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AboutRes.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SharedRes.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SharedRes.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Form1Res2.cs" />
+    <Compile Include="About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Variables.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1Res1.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Form1Res1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1Res2.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Form1Res2.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AboutRes.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AboutRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SharedRes.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SharedRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\About\picBackground.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\About\picThanks.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Form1\Main\picAbout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Form1\Main\picBackground.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Form1\Main\picBuilder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Form1\Main\picDonate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Form1\Main\picEditor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Form1\Main\picExit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Form1\Main\picNand.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Form1\Main\picRead.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Form1\Sub\AboutUsButtonDown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Form1\Sub\AboutUsButtonUp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Form1\Sub\DonateButtonDown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Form1\Sub\ExitButtonDown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Form1\Sub\ImageEditorButtonDown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Form1\Sub\NandButtonDown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Form1\Sub\ReadMeButtonDown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Form1\Sub\RGBButtonDown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Shared\picLilExit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Shared\picLilMini.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\Icon.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
